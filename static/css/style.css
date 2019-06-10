@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+/* Common Styles */
+body {
+	margin: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 72px;
+	background-color: #e65a4f;
+}
+.contents-width {
+	width: 100%;
+	max-width: 980px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.padding-32 {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+header .gnb-title {
+	font-size: 32px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 72px;
+	text-decoration: none;
+}
+header .gnb-menu {
+	float: right;
+	color: #fff;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+header .gnb-menu a {
+	text-decoration: none;
+	color: inherit;
+}
+header .gnb-menu li {
+	display: inline-block;
+	height: 72px;
+	line-height: 72px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+header .gnb-menu li.last {
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+body > .background {
+	background-color: #f6f4f0;
+}
+.background .contents {
+	background-color: #fff;
+	padding-top: 32px;
+}
+
+/* Site List */
+.site-list h1 {
+	margin: 0;
+	font-size: 28px;
+	margin-bottom: 24px;
+	font-weight: bold;
+}
+.site-list a {
+	color: inherit;
+	cursor: pointer;
+}
+.site-list .site-item {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-top: 1px solid #ccc;
+}
+.site-list .site-item h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 8px;
+}
+.site-list .site-item .site-desc {
+	margin: 0;
+	font-weight: normal;
+	font-size: 14px;
+	color: #9e9e9e;
+}
+
+/* Site Info */
+.theater-info h1 {
+	margin: 0;
+	font-size: 28px;
+	margin-bottom: 9px;
+	font-weight: bold;
+}
+.theater-info .h1-description {
+	margin: 0;
+}
+.theater-info .theater-image {
+	margin-top: 28px;
+	margin-bottom: 18px;
+	width: 100%;
+	padding-top: 42.85%;
+	background-size: cover;
+}
+.cinema-list {
+	margin-top: 28px;
+	padding-bottom: 32px;
+}
+.cinema-list ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.cinema-list ul a {
+	text-decoration: none;
+	color: inherit;
+}
+.cinema-list ul li {
+	display: block;
+	padding: 8px 16px;
+	border: 1px solid #eee;
+}
+
+/* Cinema Detail */
+.cinema-info {
+	margin-bottom: 32px;
+}
+.cinema-info h1 {
+	margin: 0;
+	font-size: 28px;
+	margin-bottom: 9px;
+	font-weight: bold;
+}
+.cinema-info h2 {
+	font-size: 14px;
+	margin-bottom: 6px;
+	color: #3a3a3a;
+}
+.cinema-info h2 a {
+	color: inherit;
+	text-decoration: none;
+}
+.cinema-basic h3,
+.cinema-review h3 {
+	font-size: 21px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+.cinema-basic p {
+	margin: 0;
+}
+.cinema-review {
+	margin-top: 32px;
+}
+.cinema-review .no-review {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin-bottom: 0;
+	color: #9e9e9e;
+}
+.cinema-review .review-form {
+	margin-top: 32px;
+}
+.cinema-review .review-textarea {
+	margin-top: 12px;
+}
+.cinema-review .review-item {
+	margin-bottom: 12px;
+}
+.cinema-review .review-item p {
+	margin-bottom: 0;
+}
