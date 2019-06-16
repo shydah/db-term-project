@@ -24,11 +24,19 @@ if ($row['review_password'] != $hashed_pass) {
 
 // 리뷰 삭제
 $query = "DELETE FROM cinedb_review WHERE review_id = " . $review_id;
+
+// use transaction
+mysqli_query($conn, "set autocommit = 0");
+mysqli_query($conn, "set transaction isolation level serializable");
+mysqli_query($conn, "begin");
+
 $result = mysqli_query($conn, $query);
 
 if(!$result) {
+	mysqli_query($conn, "rollback");
 	echo('Query Error : ' . mysqli_error($conn));
 }
 
+mysqli_query($conn, "commit");
 header("Location: /~2015120189/project/cinema_detail.php?cinema_id=" . $cinema_id);
 ?>
